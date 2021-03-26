@@ -1,0 +1,30 @@
+{
+    "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentParameters.json#",
+    "contentVersion": "1.0.0.0",
+    "parameters": {
+        "objectId": {
+            "value": "<your AD user / service principal GUID goes here>"
+        },
+        "keyVaultName": {
+            "value": "kv-learn-bicep"
+        },
+        "skuName": {
+            "value": "standard"
+        },
+        "enabledForDeployment":{
+            "value": false
+        },
+        "enabledForDiskEncryption":{
+            "value": false
+        },
+        "enabledForTemplateDeployment":{
+            "value": false
+        },
+        "keysPermissions":{
+            "value": ["list"]
+        },
+        "secretsPermissions":{
+            "value": ["list"]
+        }
+    }
+}
