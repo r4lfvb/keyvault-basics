@@ -22,12 +22,12 @@
         },
         "keysPermissions": {
             "value": [
-                "list"
+                "all"
             ]
         },
         "secretsPermissions": {
             "value": [
-                "list"
+                "all"
             ]
         }
     }
