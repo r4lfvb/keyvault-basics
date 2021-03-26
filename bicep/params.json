@@ -11,20 +11,24 @@
         "skuName": {
             "value": "standard"
         },
-        "enabledForDeployment":{
+        "enabledForDeployment": {
             "value": false
         },
-        "enabledForDiskEncryption":{
+        "enabledForDiskEncryption": {
             "value": false
         },
-        "enabledForTemplateDeployment":{
+        "enabledForTemplateDeployment": {
             "value": false
         },
-        "keysPermissions":{
-            "value": ["list"]
+        "keysPermissions": {
+            "value": [
+                "list"
+            ]
         },
-        "secretsPermissions":{
-            "value": ["list"]
+        "secretsPermissions": {
+            "value": [
+                "list"
+            ]
         }
     }
 }

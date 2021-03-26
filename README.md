@@ -4,6 +4,11 @@ This is a project that demos the following:
 
 - Deploy a Key Vault using the Azure CLI (az) and a bicep template (main.bicep)
 - C# code to work with the Key Vault
+    - The console app uses the *Azure.Identity* and *Azure.Security.KeyVault.Secrets* nuget packages.
+    - It shows you how to:
+        - Authenticate to a vault
+        - List secrets in the vault
+        - Add a new secret to the vault
 
 ## Set up the Key Vault
 
