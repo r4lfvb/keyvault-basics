@@ -10,8 +10,6 @@ namespace learn_key_vault
         {
             // <authenticate>
             
-            //string keyVaultName = Environment.GetEnvironmentVariable("KEY_VAULT_NAME");
-
             Console.Write("What's the name of your Key Vault?");
             string keyVaultName = Console.ReadLine();
             

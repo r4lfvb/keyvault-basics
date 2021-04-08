@@ -12,10 +12,12 @@ param enabledForDeployment bool = false
 param enabledForDiskEncryption bool = false
 param enabledForTemplateDeployment bool = false
 
+//@allowed(['All','Decrypt','Encrypt','UnwrapKey','WrapKey','Verify','Sign','Get','List','Update','Create','Import','Delete','Backup','Restore','Recover','Purge'])
 param keysPermissions array = [
   'list'
 ]
 
+//@allowed(['all', 'get', 'list', 'set', 'delete', 'backup', 'restore', 'recover', 'purge'])
 param secretsPermissions array = [
   'list'
 ]
@@ -25,11 +27,13 @@ resource vault 'Microsoft.KeyVault/vaults@2019-09-01' = {
   location: location
   tags: {
     displayName: 'KeyVault'
+    createdBy: 'ARM'
   }
   properties: {
     enabledForDeployment: enabledForDeployment
     enabledForTemplateDeployment: enabledForTemplateDeployment
     enabledForDiskEncryption: enabledForDiskEncryption
+    enableSoftDelete: false
     tenantId: tenantId
     accessPolicies: [
       {
